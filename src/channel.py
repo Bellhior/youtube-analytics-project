@@ -42,17 +42,17 @@ class Channel:
     @property
     def subscribers(self) -> int:
         """Возвращает число подпищиков"""
-        return self._subscribers
+        return int(self._subscribers)
 
     @property
     def video_count(self) -> int:
         """Возвращает число видео"""
-        return self._videos
+        return int(self._videos)
 
     @property
     def views_count(self) -> int:
         """Возвращает число просмотров"""
-        return self._views
+        return int(self._views)
 
     def print_info(self) -> None:
         """Выводит информацию в консоль"""
